@@ -1,0 +1,774 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hayoung Lim - Portfolio</title>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="./assets/images/my-avatar.png" alt="Hayoung Lim" width="80">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Hayoung Lim">Hayoung Lim</h1>
+
+          <p class="title">Software Engineer | Writer</p>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <a href="mailto:hayounglim@uni.minerva.edu" class="contact-link">
+                hayounglim<br>@uni.minerva.edu
+              </a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+
+              <address>San Francisco, CA</address>
+            </div>
+
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+
+          <li class="social-item">
+            <a href="https://www.linkedin.com/in/hayounglim/" class="social-link" target="_blank">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://github.com/hihahayoung" class="social-link" target="_blank">
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://medium.com/@hayounglim" class="social-link" target="_blank">
+              <ion-icon name="logo-medium"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </aside>
+
+
+
+
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link>About</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Portfolio</button>
+          </li>
+
+          <!--
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Blog</button>
+          </li>
+          -->
+
+        </ul>
+
+      </nav>
+
+
+
+
+
+      <!--
+        - #ABOUT
+      -->
+
+      <article class="about  active" data-page="about">
+
+        <header>
+          <h2 class="h2 article-title">About me</h2>
+        </header>
+
+        <section class="about-text">
+          <p>
+            I'm studying Computer Science and Economics at Minerva University, an innovative global program where I spend semesters in cities like San Francisco, Seoul, Berlin, Buenos Aires, and Taipei, collaborating with local organizations on pressing civic issues.
+        </p>
+        <br>
+        <p>
+            I'm deeply interested in the intersection of technology and social impact. 
+            I've worked in mission-critical engineering environments, published bestselling books, led civic initiatives, and interned at global nonprofits. I thrive on tackling complex challenges, blending technical rigor with strategic thinking to create impactful solutions.
+        </p>
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #PORTFOLIO
+      -->
+
+      <article class="portfolio" data-page="portfolio">
+
+        <header>
+          <h2 class="h2 article-title">Portfolio</h2>
+        </header>
+
+        <section class="projects">
+
+          <ul class="filter-list">
+
+            <li class="filter-item">
+              <button class="active" data-filter-btn>All</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Professional</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Academic</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Media</button>
+            </li>
+
+          </ul>
+
+          <div class="filter-select-box">
+
+            <button class="filter-select" data-select>
+
+              <div class="select-value" data-selecct-value>Select category</div>
+
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+
+            </button>
+
+            <ul class="select-list">
+
+              <li class="select-item">
+                <button data-select-item>All</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Professional</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Academic</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Media</button>
+              </li>
+
+            </ul>
+
+          </div>
+
+          <ul class="project-list">
+
+            <!-- 2024 items -->
+            <li class="project-item  active" data-filter-item data-category="academic">
+              <a href="https://github.com/hihahayoung/voice_recognition_pipeline" target="_blank">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-7.jpg" alt="ml_pipeline" loading="lazy">
+                </figure>
+
+                <div class="project-content">
+                  <h3 class="project-title">ML Pipeline: Voice Classification</h3>
+                  <div class="project-time">Fall 2024</div>
+                  <div class="project-category">Academic</div>
+                  <div class="project-description">
+                    Built an end-to-end machine learning pipeline to classify voices using acoustic features and spectrogram-based deep learning. 
+                    The project involved preprocessing raw audio into standardized formats, extracting features such as pitch, ZCR, and RMS, and implementing multiple models—including Decision Tree, Logistic Regression, CNN, and CRNN.
+                  </div>
+                </div>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="academic">
+              <a href="https://github.com/hihahayoung/pathweiz" target="_blank">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-2.png" alt="AI Research" loading="lazy">
+                </figure>
+
+                <div class="project-content">
+                  <h3 class="project-title">PathWeiz: Career Discovery App</h3>
+                  <div class="project-time">Fall 2024</div>
+                  <div class="project-category">Acedemic</div>
+                  <div class="project-description">
+                    Pathweiz helps students discover interesting, personalized careers, and then reduce the friction of trying them out. Powered by Google's Gemini flash model.                  </div>
+                </div>
+
+              </a>
+            </li>
+            
+            <li class="project-item  active" data-filter-item data-category="academic">
+              <a href="#" target="_blank">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-10.jpg" alt="climate_economics" loading="lazy">
+                </figure>
+
+                <div class="project-content">
+                  <h3 class="project-title">Econometrics Research: A Synthetic Control Study on Police Killings in the US</h3>
+                  <div class="project-time">Fall 2024</div>
+                  <div class="project-category">Academic</div>
+                  <div class="project-description">
+                    Evaluated the impact of state-level body camera mandates on police-related fatalities using the synthetic control method. 
+                    Focusing on New Jersey and New Mexico as treatment states, I constructed counterfactuals from a donor pool of 43 control states to isolate the effect of body-worn camera (BWC) policies. 
+                    Drawing from multiple datasets—including Mapping Police Violence, FBI crime data, and U.S. Census statistics—I modeled how demographic, political, and crime-related variables influence police violence.
+                  </div>
+                </div>
+
+              </a>
+            </li>
+
+            <li class="project-item active" data-filter-item data-category="professional">
+              <a href="https://www.videoscoover.com/" target="_blank">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images/project-1.png" alt="MBC" loading="lazy">
+                </figure>
+
+                <div class="project-content">
+                  <h3 class="project-title">Internship: MBC</h3>
+                  <div class="project-time">Summer 2024</div>
+                  <div class="project-category">Professional</div>
+                  <div class="project-description">
+                    Built a video solution for Korea's national broadcaster,
+                    which combined computer vision and large language models to assist producers and writers with face recognition and transcription.                  </div>
+                </div>
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="professional">
+              <a href="https://www.navy.mil.kr/mbshome/mbs/eng/index.do" target="_blank">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-4.jpg" alt="rok_navy" loading="lazy">
+                </figure>
+
+                <div class="project-content">
+                  <h3 class="project-title">Engineering in Uniform: Naval Intelligence Division</h3>
+                  <div class="project-time">Spring 2023 — Summer 2024</div>
+                  <div class="project-category">Professional</div>
+                  <div class="project-description">
+                    Developed and maintained core web systems used by 50,000+ daily users, 
+                    working closely with a team of 10 engineers.
+                  </div>
+                </div>
+
+              </a>
+            </li>
+
+            <!-- 2022 items -->
+            <li class="project-item  active" data-filter-item data-category="professional">
+              <a href="https://yess.io/" target="_blank">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-3.png" alt="Yess" loading="lazy">
+                </figure>
+
+                <div class="project-content">
+                  <h3 class="project-title">Internship: Yess</h3>
+                  <div class="project-time">Summer 2022</div>
+                  <div class="project-category">Professional</div>
+                  <div class="project-description">
+                    Worked on a SaaS tool that streamlines the end-to-end workflow from receiving inquiries, setting up a meeting, signing contracts, requesting payment, to ultimately managing projects/deliverables. 
+                  </div>
+                </div>
+
+              </a>
+            </li>
+
+            <!-- 2018 items -->
+            <li class="project-item  active" data-filter-item data-category="professional">
+              <a href="https://www.theschooloflife.com/" target="_blank">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-8.jpg" alt="tsol_seoul" loading="lazy">
+                </figure>
+
+                <div class="project-content">
+                  <h3 class="project-title">Internship: The School of Life Seoul</h3>
+                  <div class="project-time">Spring 2018</div>
+                  <div class="project-category">Professional</div>
+                  <div class="project-description">
+                    Collaborated with the content team to prepare and launch eight new classes on self, love, culture, and family.
+                  </div>
+                </div>
+
+              </a>
+            </li>
+
+            <!-- 2017 items -->
+            <li class="project-item  active" data-filter-item data-category="media">
+              <a href="#" target="_blank">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-6.jpg" alt="second_book" loading="lazy">
+                </figure>
+
+                <div class="project-content">
+                  <h3 class="project-title">Second Book: The Young Busker</h3>
+                  <div class="project-time">Winter 2017</div>
+                  <div class="project-category">Media</div>
+                  <div class="project-description">
+                    In 2014, the Sewol ferry disaster led me to question how such a tragedy could occur—and I came to see it as a systemic failure, not an individual one. 
+                    Drawn to Europe's social safety nets, I set off on a solo journey at 16, traveling through 21 cities over 88 days.
+                    On the flight home, I realized no predefined answers existed—only the questions we dare to ask.
+                    My reflections became a book, later selected by the Arts Council Korea as a recommended title and distributed to over 1,500 public libraries nationwide.
+                  </div>
+                </div>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="professional">
+              <a href="https://www.worldvision.or.kr/informationCenter/story/wordpress-4550" target="_blank">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-11.png" alt="fundraising" loading="lazy">
+                </figure>
+
+                <div class="project-content">
+                  <h3 class="project-title">Fundraising: Amplifying Voices from Kenya's Drylands</h3>
+                  <div class="project-time">Summer 2017</div>
+                  <div class="project-category">Professional</div>
+                  <div class="project-description">
+                    Collaborated with World Vision Korea on a humanitarian reporting initiative addressing the impact of climate change in rural Kenya. 
+                    Traveled to over 10 drought-affected villages to document firsthand accounts of water scarcity, livestock loss, and community resilience. 
+                    Participated in a fundraising campaign that raised approximately $20,000, funding the construction of water facilities that now serve over 3,800 residents.
+                  </div>
+                </div>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="media">
+              <a href="#" target="_blank">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-5.jpg" alt="dsm." loading="lazy">
+                </figure>
+
+                <div class="project-content">
+                  <h3 class="project-title">First Book: When You Never Go To School</h3>
+                  <div class="project-time">Spring 2017</div>
+                  <div class="project-category">Media</div>
+                  <div class="project-description">
+                    Homeschooling has taught me to be intrinsically motivated and to explore my interests independently. 
+                    If studying becomes more and more disconnected from real life, it loses the reason for its existence. 
+                    Now I believe it is time to change the paradigm of study - from shallow memorization to deep musing, from passive learning to active learning, and from the classroom to the real world.
+                  </div>
+                </div>
+
+              </a>
+            </li>
+
+            <!-- 2016 items -->
+            <li class="project-item  active" data-filter-item data-category="media">
+              <a href="https://www.huffingtonpost.kr/news/articleList.html?sc_word=%EC%9E%84%ED%95%98%EC%98%81" target="_blank">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-12.jpg" alt="documentary" loading="lazy">
+                </figure>
+
+                <div class="project-content">
+                  <h3 class="project-title">Contribution: HuffPost Korea</h3>
+                  <div class="project-time">Winter 2016 —</div>
+                  <div class="project-category">Media</div>
+                  <div class="project-description">
+                    Contributed to HuffPost Korea since 2016, writing on education, technology, and politics.
+                  </div>
+                </div>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="professional">
+              <a href="https://libertyinnorthkorea.org/refugee-resettlement" target="_blank">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-9.jpg" alt="link" loading="lazy">
+                </figure>
+
+                <div class="project-content">
+                  <h3 class="project-title">Internship: Liberty in North Korea</h3>
+                  <div class="project-time">Spring 2016</div>
+                  <div class="project-category">Professional</div>
+                  <div class="project-description">
+                    Designed and led a 6-month Young Leaders Program for 25 North Korean refugees, 
+                    aimed at helping participants fulfill their potential and adapt to life in South Korea. 
+                  </div>
+                </div>
+
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #BLOG
+      -->
+
+      <!--
+      <article class="blog" data-page="blog">
+
+        <header>
+          <h2 class="h2 article-title">Blog</h2>
+        </header>
+
+        <section class="blog-posts">
+
+          <ul class="blog-posts-list">
+
+            <li class="blog-post-item">
+              <a href="#" target="_blank">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-1.jpg" alt="Tech Ethics and Society" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Tech Ethics</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2023-08-15">Aug 15, 2023</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">The Ethics of AI in Everyday Life</h3>
+
+                  <p class="blog-text">
+                    Exploring how artificial intelligence shapes our daily decisions and the ethical questions we should be asking.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#" target="_blank">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-2.jpg" alt="Software Development" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Engineering</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2023-06-21">Jun 21, 2023</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Building Accessible Web Applications</h3>
+
+                  <p class="blog-text">
+                    Practical guidelines for creating inclusive digital experiences that work for everyone.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#" target="_blank">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-3.jpg" alt="Global Education" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Education</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2023-04-18">Apr 18, 2023</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Learning Across Borders: Global Education</h3>
+
+                  <p class="blog-text">
+                    Reflections on my experiences studying across five different countries and the future of global education.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#" target="_blank">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-4.jpg" alt="Civic Technology" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Civic Tech</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2023-02-10">Feb 10, 2023</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Technology for Civic Engagement</h3>
+
+                  <p class="blog-text">
+                    How digital tools are reshaping community participation and democratic processes.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#" target="_blank">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-5.jpg" alt="Future of Work" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Future of Work</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-12-05">Dec 05, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Remote Work and Global Teams</h3>
+
+                  <p class="blog-text">
+                    Strategies for effective collaboration in distributed teams across time zones and cultures.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#" target="_blank">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-6.jpg" alt="Book Reviews" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Books</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-10-22">Oct 22, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Essential Reads on Technology and Society</h3>
+
+                  <p class="blog-text">
+                    A curated list of books that have shaped my understanding of our technological present and future.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+      -->
+
+    </div>
+
+  </main>
+
+
+
+
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
